@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}
+
+  .speech {border: 1px solid #DDD; width: 300px; padding: 0; margin: 0; }
+  .speech input {border: 0; width: 240px; display: inline-block; height: 30px;}
+  .speech img {float: right; width: 40px }
+
+  
+</style>
+<script src="levizja.js"></script>
+<script src="leximi.js"></script>
+
+</head>
+<body onload="startGame()">
+
+<div style="text-align:center;width:1000px;">
+  <button id="larte"  onclick="document.getElementById('teksti').value =''" >NDALE</button><br><br>
+<h1 id="titulli"></h1>
+</div>
+
+<img onclick="startDictation()" src="mic.png" />
+
+  <div id="fsheh" class="speech">
+    <input type="text" name="q" id="teksti" placeholder="Fol" />
+    <button id="automatik" onclick="myFunction()">Aktivizo</button>
+  </div>
+
+
+
+
+
+<script> 
+setInterval(function () {document.getElementById("automatik").click();}, 1000);
+//setInterval(function () {document.getElementById("fsheh").style.display = "none";}, 0);
+
+</script>
+
+
+
+
+
+</body>
+</html>
