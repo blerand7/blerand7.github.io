@@ -76,9 +76,9 @@ function myFunction() {
     }  
 	  else if(letter == "majtas"|| letter == "mitis"|| letter == "midas"|| letter == "my test"|| letter == "my thoughts") {
        moveleft();
-	  // document.getElementById("titulli").innerHTML = "MAJTAS";
+	   document.getElementById("titulli").innerHTML = "MAJTAS";
     }	
-		  else if(letter == "djathtas"|| letter == "blastoise"|| letter == "justice"|| letter == "gattis"|| letter == "otis"|| letter == "the artist") {
+		  else if(letter == "djathtas"|| letter == "blastoise"|| letter == "justice"|| letter == "gattis"|| letter == "otis"|| letter == "the artist" || letter == "delta's"|| letter == "dentist"|| letter == "lapis") {
        moveright();
 	   //document.getElementById("titulli").innerHTML = "DJATHTAS";
     }	
